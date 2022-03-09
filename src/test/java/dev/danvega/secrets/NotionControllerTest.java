@@ -17,7 +17,7 @@ class NotionControllerTest {
 
     @Test
     void printAllProps() {
-        Map<String,String> response = webTestClient
+        Map response = webTestClient
                 .get()
                 .uri("/notion")
                 .exchange()
