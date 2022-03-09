@@ -19,7 +19,7 @@ public class NotionController {
     @GetMapping
     public Map<String,String> printAllProps() {
         return Map.of("apiUrl", notionConfig.apiUrl(),
-                "apiVersion", notionConfig.apiUrl(),
+                "apiVersion", notionConfig.apiVersion(),
                 "authToken", notionConfig.authToken(),
                 "databaseId", notionConfig.databaseId());
     }
